@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.load {
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+}
+
+.sell {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sell img {
+    position: absolute;
+    right: 0;
+    width: 35%;
+    height: 100vh;
+}
+
+.apply {
+    margin-left: 100px;
+}
+
+.apply h2 {
+    color: #d5be8b;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px 0px 40px;
+}
+
+.apply textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: #d5be8b;
+    margin-bottom: 30px;
+}
+
+.apply #addres,
+#about {
+    height: 180px;
+}
+
+#sellBtn {
+    background-color: #d5be8b;
+    padding: 10px 30px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    left: 25%;
+}
+
+@media(max-width:992px) {
+    .apply {
+        margin-left: 0px;
+        text-align: start;
+    }
+}
+
+@media(max-width:1188px) {
+    .sell img {
+        display: none;
+    }
+}

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    font-family: serif;
+}
+
+.sofas {
+    transform: translateY(15%);
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.imgs img {
+    width: 95%;
+    height: 80%;
+    border: 8px solid rgb(184, 184, 184);
+    margin-bottom: 15px;
+}
+
+.sofas p {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.card {
+    width: 33%;
+    margin: 2px;
+    position: relative;
+}
+
+.card p {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.card:hover p {
+    opacity: 1;
+}
+
+.card:hover {
+    opacity: .7;
+}
+
+@media(max-width:767px) {
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+}

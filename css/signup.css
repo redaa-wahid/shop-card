@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.load {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.content {
+    display: flex;
+    transform: translate(25%, 10%);
+    width: 65%;
+    height: 82vh;
+    background-color: white;
+    box-shadow: -4px -4px 15px #8c8a87;
+}
+
+.content img {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+}
+
+.inputs {
+    position: relative;
+    width: 50%;
+    margin: 30px;
+    margin-top: 10px;
+    height: 90%;
+}
+
+.inputs input {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.inputs input:focus {
+    border: 1px solid #d5be8b;
+}
+
+.inputs p {
+    font-size: 35px;
+    font-weight: initial;
+    text-transform: uppercase;
+    font-family: serif;
+}
+
+.cek {
+    margin: 20px 20px;
+    width: 400px;
+}
+
+#ck {
+    position: absolute;
+}
+
+.inputs button {
+    background-color: #d5be8b;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.inputs a {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    opacity: 0;
+}
+
+@media(min-width: 20px) and (max-width: 992px) {
+    .content {
+        width: 100%;
+        margin: 0;
+        transform: translate(0);
+        height: 100vh;
+        text-align: center;
+    }
+    .content img {
+        display: none;
+    }
+    .inputs input {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 90%;
+        margin-left: 0;
+    }
+    .inputs {
+        width: 90%;
+        margin: 20px;
+    }
+    .cek {
+        text-align: start;
+        margin-left: 34px;
+        width: 400px;
+    }
+    #ck {
+        position: absolute;
+        left: -40%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+    .cek {
+        text-align: start;
+        margin-left: 56px;
+        width: 400px;
+    }
+}
+
+@media (max-height: 767px) {
+    .content {
+        width: 100%;
+        margin: 0;
+        transform: translate(0);
+        height: 100vh;
+    }
+}

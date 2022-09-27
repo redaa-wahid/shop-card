@@ -1,0 +1,33 @@
+:root {
+    --blue: #d5be8b;
+}
+
+.content img {
+    position: relative;
+}
+
+.content {
+    box-shadow: 5px 5px 15px #8c8a87;
+}
+
+.inputs p {
+    font-size: 40px;
+}
+
+.inputs input#bt {
+    background-color: var(--blue);
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .content img {
+        position: absolute;
+        left: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.not-found {
+    background-image: url(../images/404-bg.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.not-found .content {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.content a {
+    color: white;
+}
+
+@media(max-width:767px) {
+    .not-found .content {
+        transform: translate(0%);
+        text-align: start;
+    }
+    .not-found .content {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+}

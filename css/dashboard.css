@@ -1,0 +1,91 @@
+body {
+    background-color: #ddd;
+}
+
+.nav {
+    width: 88%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin: auto;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: -5px 5px 35px 5px rgb(123, 123, 123);
+}
+
+.nav button {
+    background-color: #d5be8b;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav span {
+    font-size: 20px;
+    color: #d5be8b;
+}
+
+.best-prouducts .not-found {
+    border: none !important;
+    font-weight: bold;
+    font-size: 80px;
+    display: none;
+}
+
+.best {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card {
+    position: relative;
+}
+
+.best .change {
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.best .change button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+    z-index: 3;
+}
+
+.best .card:hover button {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.change .open {
+    top: 50px;
+}
+
+.change .delete {
+    top: 105px;
+}
+
+@media(max-width: 767px) {
+    .best-prouducts .imgs .card img {
+        margin-bottom: 30px;
+    }
+    .nav {
+        width: 100%;
+    }
+}
