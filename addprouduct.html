@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/add-product.css">
+    <title>online store: addd product</title>
+</head>
+
+<body>
+
+    <nav class="add"> </nav>
+
+    <h2 class="head">add product</h2>
+    <div class="error">
+    </div>
+
+    <section class="product-data container">
+        <div class="image">
+            <input type="file" id="file-img" accept="image/*" hidden>
+            <label for="file-name">upload image</label>
+            <img>
+        </div>
+        <div class="data">
+            <p class="prodName" contenteditable="true" data-placeholder="premium sofa"></p>
+            <p class="prodDes" contenteditable="true" data-placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aut deleniti sunt explicabo ducimus molestiae."></p>
+            <div class="img">
+                <img src="images/fill star.png" alt="">
+                <img src="images/fill star.png" alt="">
+                <img src="images/fill star.png" alt="">
+                <img src="images/fill star.png" alt="">
+                <img src="images/no fill star.png" alt="">
+                <small>4,023 reviews</small>
+            </div>
+            <span contenteditable="true" data-placeholder="$499" class="price"></span><br>
+            <button class="buy">buy now</button>
+            <button class="add-cart">add to cart</button>
+        </div>
+    </section>
+
+    <section class="details container">
+        <div class="del">
+            <h2>details</h2>
+            <p class="lorem" contenteditable="true" data-placeholder="lorem impsum"></p>
+        </div>
+        <div class="tags">
+            <h2>tags</h2>
+            <p class="p">enter some tags related to this will help in searching the product give coma seprated tags</p>
+            <p class="tg" contenteditable="true" data-placeholder="3tags atleast"></p>
+        </div>
+        <div class="btn">
+            <button class="add-prod">add product</button>
+            <button class="save">save draft</button>
+        </div>
+    </section>
+
+    <script src="js/common.js"></script>
+
+    <script src="js/add-product.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
