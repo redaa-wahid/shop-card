@@ -119,7 +119,7 @@ let showdata = document.querySelector(".account-name .div");
     } else {
         showUser.style.display = "block";
     }
-})
+}
 function logout() {
     localStorage.removeItem("user-name");
-})
+}
