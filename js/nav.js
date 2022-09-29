@@ -90,15 +90,17 @@ window.addEventListener('scroll', () => {
 
 
 //show name account
-let user = document.querySelector(".user");
-let showUser = document.querySelector(".account-name");
-let showdata = document.querySelector(".account-name .div");
+//let user = document.querySelector(".user");
+
 let myName = document.querySelector(".account-name span");
-let logOut = document.querySelector(".account-name  #logOut");
+
 
 let yourName = localStorage.getItem("user-name");
 
 user.addEventListener("click", () => {
+    let showUser = document.querySelector(".account-name");
+let showdata = document.querySelector(".account-name .div");
+    let logOut = document.querySelector(".account-name  #logOut");
     if (!yourName) {
         showdata.innerHTML = `log in to your account`;
         logOut.innerHTML = "login";
@@ -118,7 +120,7 @@ user.addEventListener("click", () => {
         showUser.style.display = "block";
     }
 })
-
+ let logOut = document.querySelector(".account-name  #logOut");
 logOut.addEventListener("click", () => {
     localStorage.removeItem("user-name");
 })
