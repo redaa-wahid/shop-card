@@ -1,8 +1,7 @@
 let imgs = document.querySelector(".imgs"),
-    btnAddProd = document.querySelector(".btn"),
     nameAccount = document.querySelector(".nav p span");
 
-
+let btnAddProd = document.querySelector(".btn");
 //add new products
 btnAddProd.addEventListener("click", () => {
     window.location = "addprouduct.html";
