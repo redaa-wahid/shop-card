@@ -3,6 +3,13 @@ let imgs = document.querySelector(".imgs"),
     nameAccount = document.querySelector(".nav p span");
 
 
+//add new products
+btnAddProd.addEventListener("click", () => {
+    window.location = "addprouduct.html";
+})
+
+
+
 let nameUser = localStorage.getItem("user-name");
 nameAccount.innerHTML = nameUser;
 let data = JSON.parse(localStorage.getItem("state"));
@@ -30,10 +37,7 @@ function addproduct(data) {
 }
 addproduct(data);
 
-//add new products
-btnAddProd.addEventListener("click", () => {
-    window.location = "addprouduct.html";
-})
+
 
 
 //details of products
