@@ -22,14 +22,14 @@ function addnavbar() {
     <span></span>
         <div class="icon">
             <img onclick="gotocard()"  class="shop" src="images/cart.png" alt="">
-            <img class="user" src="images/user.png" alt="">
+           <img class="user" onclick="clickaccount()" src="images/user.png" alt="">
         </div>
         <div class="account-name">
             <div class="div">
                 <span></span>
             </div>
             <div class="btn">
-                <button id="logOut"></button>
+               <button id="logOut" onclick="logout()"></button>
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@ let myName = document.querySelector(".account-name span");
 
 let yourName = localStorage.getItem("user-name");
 
-user.addEventListener("click", () => {
+function clickaccount(){
     let showUser = document.querySelector(".account-name");
 let showdata = document.querySelector(".account-name .div");
     let logOut = document.querySelector(".account-name  #logOut");
@@ -120,7 +120,6 @@ let showdata = document.querySelector(".account-name .div");
         showUser.style.display = "block";
     }
 })
- let logOut = document.querySelector(".account-name  #logOut");
-logOut.addEventListener("click", () => {
+function logout() {
     localStorage.removeItem("user-name");
 })
