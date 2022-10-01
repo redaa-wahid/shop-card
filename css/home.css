@@ -197,6 +197,7 @@ nav {
       .account-name {
        z-index: 3;
         position: absolute;
+           top: 130%;
         right: -30px;
     }
 }
