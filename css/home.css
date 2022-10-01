@@ -194,6 +194,11 @@ nav {
     .add {
         display: none;
     }
+      .account-name {
+       z-index: 3;
+        position: absolute;
+        right: -30px;
+    }
 }
 
 @media(min-width:993px) and (max-width:1188px) {
